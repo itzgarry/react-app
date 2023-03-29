@@ -5,7 +5,7 @@ import myImage from "./images/img.jpg";
 
 function PrintSomething() {
   return (
-    <>
+    <React.Fragment>
       <div className="body">
         <div className="container">
           <h3>Learn Coding...</h3>
@@ -34,7 +34,7 @@ function PrintSomething() {
           </div>
         </div>
       </div>
-    </>
+    </React.Fragment>
   );
 }
 
