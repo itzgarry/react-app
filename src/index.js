@@ -4,6 +4,10 @@ import "./main.css";
 import myImage from "./images/img.jpg";
 
 function PrintSomething() {
+  return <HomePage />;
+}
+
+const HomePage = () => {
   return (
     <React.Fragment>
       <div className="body">
@@ -36,8 +40,7 @@ function PrintSomething() {
       </div>
     </React.Fragment>
   );
-}
-
+};
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(<PrintSomething></PrintSomething>);
