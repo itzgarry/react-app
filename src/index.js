@@ -2,9 +2,15 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./main.css";
 import myImage from "./images/img.jpg";
+import BookList from "./booklist";
 
 function PrintSomething() {
-  return <HomePage />;
+  return (
+    <>
+      {/* <HomePage /> */}
+      <BookList />
+    </>
+  );
 }
 
 const HomePage = () => {
@@ -44,3 +50,5 @@ const HomePage = () => {
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(<PrintSomething></PrintSomething>);
+
+export default PrintSomething;
