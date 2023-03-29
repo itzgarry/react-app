@@ -1,0 +1,58 @@
+.body {
+  max-width: 1170px;
+  margin: auto;
+}
+
+.container {
+  background-color: #fb2056;
+}
+
+.sec_1_container {
+  display: flex;
+  padding: 80px 0px 80px 0px;
+}
+
+.sec_1_content_container {
+  color: black;
+  width: 100%;
+  margin: auto;
+}
+
+.sec_1_image_container {
+  width: 100%;
+}
+
+.sec_1_image_container img {
+  max-width: 100%;
+}
+
+.divider {
+  border: 2px solid #fb2056;
+  display: block;
+  width: 100px;
+}
+
+.btn_content_sec {
+  margin-top: 40px;
+}
+
+.btn_1 {
+  text-decoration: none;
+  color: black;
+  padding: 12px 30px;
+  border-radius: 6px;
+  background-color: #fb2056;
+  border-color: #fb2056;
+  font: 16px "Noto Sans", sans-serif;
+}
+
+.btn_2 {
+  text-decoration: none;
+  color: black;
+  padding: 12px 30px;
+  border-radius: 6px;
+  background: transparent;
+  border: 1px solid black;
+  margin-left: 20px;
+  font: 16px "Noto Sans", sans-serif;
+}
