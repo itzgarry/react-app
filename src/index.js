@@ -3,12 +3,14 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import myImage from "./images/img.jpg";
 import BookList from "./booklist";
+import Props from "./props";
 
 function PrintSomething() {
   return (
     <>
       {/* <HomePage /> */}
-      <BookList />
+      {/* <BookList /> */}
+      <Props />
     </>
   );
 }

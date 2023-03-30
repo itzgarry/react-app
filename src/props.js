@@ -6,23 +6,21 @@ import "./booklist.css";
 const title = "Learn Flutter";
 const description = "Coding is life!";
 
-const BookList = () => {
+const Props = () => {
   return (
     <section className="booklist">
-      <Book></Book>
-      <Book></Book>
-      <Book></Book>
-      <Book></Book>
-      <Book></Book>
-      <Book></Book>
+      <Book job="Developer" />
+      <Book title="Hi i'm garry" />
+      <Book number={6} />
     </section>
   );
 };
 
-const Book = () => {
+const Book = (props) => {
   const inlineStyle = {
     color: "#617d98",
   };
+  console.log(props);
   return (
     <article className="book">
       <img
@@ -32,11 +30,14 @@ const Book = () => {
       />
       <h2>{title}</h2>
       <h4 style={inlineStyle}>{description}</h4>
+      <p>{props.job}</p>
+      <p>{props.title}</p>
+      <p>{props.number}</p>
     </article>
   );
 };
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<BookList />);
+root.render(<Props />);
 
-export default BookList;
+export default Props;

@@ -1,0 +1,35 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  .booklist {
+    width: 90vm;
+    max-width: 1170px;
+    margin: 5rem auto;
+    display: grid;
+    gap: 2rem;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .booklist {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  .book {
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+    background-color: #cbcaca;
+    margin: 1rem auto;
+  }
+  
+  .book img {
+    object-fit: cover;
+  }
+  
