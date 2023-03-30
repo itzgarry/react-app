@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./main.css";
+import "./index.css";
 import myImage from "./images/img.jpg";
 import BookList from "./booklist";
 

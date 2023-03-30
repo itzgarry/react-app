@@ -1,10 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import flutterBird from "./images/flutter-bird.png";
+import "./booklist.css";
 
 const BookList = () => {
   return (
-    <section>
+    <section className="booklist">
+      <Book></Book>
+      <Book></Book>
+      <Book></Book>
       <Book></Book>
       <Book></Book>
       <Book></Book>
@@ -14,7 +18,7 @@ const BookList = () => {
 
 const Book = () => {
   return (
-    <article>
+    <article className="book">
       <Image></Image>
       <Title></Title>
       <Discription></Discription>
@@ -22,7 +26,13 @@ const Book = () => {
   );
 };
 
-const Image = () => <img className="img-fluid" src={flutterBird} alt="FlutterBird" />;
+const Image = () => (
+  <img
+    className="img-fluid rounded mx-auto d-block"
+    src={flutterBird}
+    alt="FlutterBird"
+  />
+);
 const Title = () => <h2>Learn Flutter</h2>;
 const Discription = () => {
   return <h4>Coding is life!</h4>;
