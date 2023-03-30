@@ -33,9 +33,14 @@ const Image = () => (
     alt="FlutterBird"
   />
 );
+
+const inlineStyle = {
+  color: "#617d98",
+};
+
 const Title = () => <h2>Learn Flutter</h2>;
 const Discription = () => {
-  return <h4>Coding is life!</h4>;
+  return <h4 style={inlineStyle}>Coding is life!</h4>;
 };
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
