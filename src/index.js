@@ -4,13 +4,15 @@ import "./index.css";
 import myImage from "./images/img.jpg";
 import BookList from "./booklist";
 import Props from "./props";
+import List from "./list";
 
 function PrintSomething() {
   return (
     <>
       {/* <HomePage /> */}
       {/* <BookList /> */}
-      <Props />
+      {/* <Props /> */}
+      <List />
     </>
   );
 }

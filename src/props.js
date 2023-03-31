@@ -36,22 +36,30 @@ const Props = () => {
         title={flutterCourse.title}
         description={flutterCourse.description}
         flutterBird={flutterCourse.flutterBird}
-      />
+      >
+        <button className="btn btn-danger">LET'S START</button>
+      </Course>
       <Course
         title={javaCourse.title}
         description={javaCourse.description}
         flutterBird={javaCourse.flutterBird}
-      />
+      >
+        <button className="btn btn-danger">LET'S START</button>
+      </Course>
       <Course
         title={pythonCourse.title}
         description={pythonCourse.description}
         flutterBird={pythonCourse.flutterBird}
-      />
+      >
+        <button className="btn btn-danger">COMING SOON..</button>
+      </Course>
       <Course
         title={cCourse.title}
         description={cCourse.description}
         flutterBird={cCourse.flutterBird}
-      />
+      >
+        <button className="btn btn-danger">COMING SOON..</button>
+      </Course>
     </section>
   );
 };
@@ -64,16 +72,18 @@ const Course = (props) => {
   const titleStyle = {
     marginTop: "12px",
   };
+  const { flutterBird, title, description, children } = props;
   console.log(props);
   return (
     <article className="book">
       <img
         className="img-fluid rounded mx-auto d-block"
-        src={props.flutterBird}
+        src={flutterBird}
         alt="FlutterBird"
       />
-      <h2 style={titleStyle}>{props.title}</h2>
-      <h4 style={inlineStyle}>{props.description}</h4>
+      <h2 style={titleStyle}>{title}</h2>
+      <h4 style={inlineStyle}>{description}</h4>
+      {children}
     </article>
   );
 };
