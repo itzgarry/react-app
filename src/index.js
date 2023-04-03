@@ -9,10 +9,10 @@ import List from "./list";
 function PrintSomething() {
   return (
     <>
-      {/* <HomePage /> */}
-      {/* <BookList /> */}
-      {/* <Props /> */}
-      <List />
+      {/* <HomePage />
+      <BookList />
+      <Props />
+      <List /> */}
     </>
   );
 }

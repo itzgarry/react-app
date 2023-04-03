@@ -41,14 +41,7 @@ const List = () => {
     <section className="booklist">
       {tutorial.map((i) => {
         const { flutterBird, title, description, id } = i;
-        return (
-          <Course
-            flutterBird={flutterBird}
-            title={title}
-            description={description}
-            key={id}
-          />
-        );
+        return <Course {...i} key={i.id} />;
       })}
     </section>
   );
